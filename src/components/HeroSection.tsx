@@ -28,7 +28,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
-              👋 Selamat datang di portfolio saya
+              👋 Welcome To My Portofolio
             </motion.span>
           </motion.div>
 
@@ -38,9 +38,9 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            Fullstack Developer
+            Narkoba
             <br />
-            <span className="text-gradient">&amp; Content Creator</span>
+            <span className="text-gradient">&amp; Dampaknya</span>
           </motion.h1>
 
           <motion.p
@@ -49,8 +49,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            Saya membangun aplikasi web yang indah dan fungsional, 
-            serta membagikan pengetahuan melalui konten yang inspiratif.
+             narkoba (Narkotika, Psikotropika, dan Bahan Adiktif lainnya) adalah zat atau obat yang dapat memicu penurunan atau perubahan kesadaran, hilangnya rasa nyeri, dan menyebabkan ketergantungan. 
+          
           </motion.p>
 
           <motion.div
