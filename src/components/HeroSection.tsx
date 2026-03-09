@@ -16,7 +16,8 @@ export default function HeroSection() {
       <ThreeScene />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+        
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

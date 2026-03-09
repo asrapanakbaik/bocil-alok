@@ -38,7 +38,7 @@
 
     /* Custom tokens */
     --gradient-primary: linear-gradient(135deg, hsl(175 80% 40%), hsl(200 80% 50%));
-    --navbg: linear-gradient(180deg, hsl(0, 100%, 51%) 0%, hsl(210, 72%, 55%) 100%);
+    --navbg: linear-gradient(180deg, hsl(197, 85%, 49%) 0%, hsl(210, 72%, 55%) 100%);
     --shadow-glow: 0 0 40px hsl(175 80% 40% / 0.3);
     --shadow-card: 0 4px 20px hsl(220 20% 10% / 0.08);
     --shadow-card-hover: 0 8px 30px hsl(220 20% 10% / 0.12);
