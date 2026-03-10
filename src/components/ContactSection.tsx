@@ -126,12 +126,12 @@ export default function ContactSection() {
           >
             <div>
               <h3 className="font-display text-2xl font-bold mb-4">
-                Mari Berkolaborasi!
+                Let's Collaborate
               </h3>
               <p className="text-muted-foreground leading-relaxed">
                 Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk 
-                menghubungi saya. Saya selalu terbuka untuk diskusi tentang project 
-                baru, ide kreatif, atau kesempatan untuk menjadi bagian dari visi Anda.
+                menghubungi nomor saya. Saya sangat terbuka untuk berdiskusi tentang project 
+                baru, ide kreatif, atau rencana-rencana yang menarik lainnya.
               </p>
             </div>
 
