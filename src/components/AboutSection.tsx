@@ -1,94 +1,67 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Video, Coffee, Rocket } from 'lucide-react';
+import { Button } from '@/components/ui/button'; // Sesuaikan dengan path kamu
 
-export default function AboutSection() {
-  const stats = [
-    { icon: Code2, value: '50+', label: 'Projects Selesai' },
-    { icon: Video, value: '100+', label: 'Video Konten' },
-    { icon: Coffee, value: '1000+', label: 'Cangkir Kopi' },
-    { icon: Rocket, value: '5+', label: 'Tahun Pengalaman' },
-  ];
-
+export default function HeroSection() {
   return (
-    <section id="about" className="py-20 md:py-32 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="text-primary font-medium mb-2 block">Tentang Saya</span>
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Mengenal Lebih Dekat
-          </h2>
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-        </motion.div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden glass shadow-card">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <span className="text-8xl">👨‍💻</span>
-                </div>
-              </div>
-              <div className="absolute -bottom-6 -right-6 p-4 glass rounded-xl shadow-card">
-                <p className="font-display font-bold text-2xl text-gradient">5+ Tahun</p>
-                <p className="text-sm text-muted-foreground">Pengalaman</p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="space-y-6"
-          >
-            <h3 className="font-display text-2xl md:text-3xl font-bold">
-              Passionate Developer &amp; Creator
-            </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Saya adalah seorang Fullstack Web Developer dengan passion yang kuat dalam menciptakan 
-              solusi digital yang inovatif. Dengan pengalaman lebih dari 5 tahun, saya telah 
-              membantu berbagai klien dan perusahaan dalam mewujudkan ide-ide mereka menjadi 
-              aplikasi web yang powerful dan user-friendly.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Selain coding, saya juga aktif sebagai Content Creator
-              
+    <section className="flex flex-col lg:flex-row items-center justify-center gap-12 p-10">
+      
+      {/* --- KIRI: BAGIAN STIKER API (KODE YANG TADI) --- */}
+      <div className="relative group w-64 h-64 md:w-80 md:h-80">
+        <div className="aspect-square rounded-2xl overflow-hidden glass shadow-card border border-white/10 p-2 h-full">
+          <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center rounded-xl relative">
             
-            ,berbagi pengetahuan 
-              tentang pemrograman dan teknologi melalui berbagai platform. Saya percaya bahwa 
-              berbagi ilmu adalah cara terbaik untuk terus belajar dan berkembang.
-            </p>
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="p-4 glass rounded-xl text-center hover:shadow-card-hover transition-shadow"
-                >
-                  <stat.icon className="h-6 w-6 text-primary mx-auto mb-2" />
-                  <p className="font-display text-2xl font-bold">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+            {/* Api-api melayang */}
+            <motion.span className="absolute bottom-5 left-5 text-4xl z-0" animate={{ y: [0, -15, 0], opacity: [0.4, 0.8, 0.4] }} transition={{ duration: 2, repeat: Infinity }}>🔥</motion.span>
+            <motion.span className="absolute top-5 right-5 text-4xl z-0" animate={{ y: [0, -15, 0], opacity: [0.3, 0.7, 0.3] }} transition={{ duration: 2.5, repeat: Infinity, delay: 0.5 }}>🔥</motion.span>
+
+            {/* Emoji Utama */}
+            <motion.span 
+              className="text-8xl z-10"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              👨‍💻
+            </motion.span>
+          </div>
         </div>
       </div>
+
+      {/* --- KANAN: DATA DIRI KAMU (YANG SEMPAT "HILANG") --- */}
+      <div className="max-w-xl text-center lg:text-left">
+        <motion.h1 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="text-4xl md:text-6xl font-bold mb-4"
+        >
+          My <span className="text-black-500">Self</span>
+        </motion.h1>
+
+        <motion.p 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-lg text-muted-foreground mb-6"
+        >
+          Saya adalah seorang siswa dari MAN 1 Banda Aceh, 
+          saya berasal dari kelas x-11,saya akan memperkenalkan hasil project 
+          koding saya yang sudah saya buat ini. 
+        </motion.p>
+        <motion.p 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-lg text-muted-foreground mb-6"
+        >
+          Saya berasal dari Aceh, lebih tepatnya dari Aceh Besar. 
+          Saya lahir pada tanggal 07-11-2009, tepat pada tahun ini saya sudah berumur 17 tahun.
+          saya seorang siswa dari MAN 1 Banda Aceh, dan saya berasal dari kelas X-11.
+          Terima Kasih
+        </motion.p>
+
+    
+      </div>
+
     </section>
   );
 }

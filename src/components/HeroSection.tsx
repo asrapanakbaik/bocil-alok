@@ -29,7 +29,7 @@ export default function HeroSection() {
             {/* Bingkai Foto dengan Efek Glassmorphism */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-3xl overflow-hidden glass p-3 shadow-glow transition-transform duration-500 group-hover:scale-[1.02]">
               <img 
-                src="/profile.jpg" // <-- GANTI DENGAN PATH FOTO KAMU
+                src="/public/foto akun 1.jpg" // <-- GANTI DENGAN PATH FOTO KAMU
                 alt="Asyraf"
                 className="w-full h-full object-cover rounded-2xl"
               />
@@ -73,7 +73,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg"
             >
-              Nama aku Asyraf, aku adalah seorang pemula dalam hal keuangan dari Aceh. 
+              Nama aku Asyraf, aku adalah seorang pelajar dari Aceh yang pertama kali mencoba coding. 
               Terimakasih sudah bersedia melihat perjalanan portofolio saya.
             </motion.p>
 
