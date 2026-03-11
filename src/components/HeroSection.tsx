@@ -29,7 +29,7 @@ export default function HeroSection() {
             {/* Bingkai Foto dengan Efek Glassmorphism */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-3xl overflow-hidden glass p-3 shadow-glow transition-transform duration-500 group-hover:scale-[1.02]">
               <img 
-                src="/public/foto akun 1.jpg" // <-- GANTI DENGAN PATH FOTO KAMU
+                src="/foto akun 1.jpg" // <-- GANTI DENGAN PATH FOTO KAMU
                 alt="Asyraf"
                 className="w-full h-full object-cover rounded-2xl"
               />
