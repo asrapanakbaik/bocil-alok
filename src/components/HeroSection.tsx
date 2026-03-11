@@ -115,14 +115,16 @@ export default function HeroSection() {
               className="flex items-center gap-5"
             >
               {[
-                { icon: Github, href: '#', label: 'GitHub' },
-                { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                { icon: Youtube, href: '#', label: 'YouTube' },
-                { icon: Instagram, href: '#', label: 'Instagram' },
+                { icon: Github, href: 'https://github.com/asrapanakbaik/bocil-alok.git', label: 'GitHub' },
+                // { icon: Linkedin, href: '#', label: 'LinkedIn' },
+                // { icon: Youtube, href: '#', label: 'YouTube' },
+                // { icon: Instagram, href: '#', label: 'Instagram' },
               ].map((social) => (
                 <motion.a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full glass border border-white/5 hover:shadow-glow transition-all duration-300 group/icon"
                   whileHover={{ scale: 1.1, y: -3 }}
                   whileTap={{ scale: 0.95 }}
